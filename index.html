@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Splitter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Video Splitter</h1>
+        <input type="file" id="videoUpload" accept="video/*" class="input-file">
+        <br>
+        <label for="splitDuration">Enter split duration in seconds:</label>
+        <input type="number" id="splitDuration" min="1" class="input-number">
+        <br>
+        <button onclick="splitVideo()" class="btn">Split Video</button>
+        <br>
+        <div id="videoSegments" class="video-segments"></div>
+    </div>
+
+    <script src="videoSplitter.js"></script>
+</body>
+</html>
